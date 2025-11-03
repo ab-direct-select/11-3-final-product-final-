@@ -597,9 +597,8 @@
             const email = document.getElementById('customerEmail').value;
             const storeCity = document.getElementById('storeCity').value;
             const storeName = document.getElementById('storeName').value;
-            const storeAddress = document.getElementById('storeAddress').value;
             const storeCode = document.getElementById('storeCode').value;
-            const address = `${storeCity} - ${storeName} (${storeAddress})${storeCode ? ' [代碼:' + storeCode + ']' : ''}`;
+            const address = `${storeCity} - ${storeName} ${storeCode ? ' [代碼:' + storeCode + ']' : ''}`;
             const account = document.getElementById('accountLast5').value;
             const note = document.getElementById('orderNote').value;
             const screenshotFile = document.getElementById('paymentScreenshot').files[0];
