@@ -603,7 +603,7 @@
             const note = document.getElementById('orderNote').value;
             const screenshotFile = document.getElementById('paymentScreenshot').files[0];
 
-            if (!name || !phone || !email || !storeCity || !storeName || !storeAddress || !account || !screenshotFile) {
+            if (!name || !phone || !email || !storeCity || !storeName || !account || !screenshotFile) {
                 alert('請填寫所有必填欄位並上傳匯款截圖！');
                 return;
             }
@@ -685,7 +685,6 @@
                         <p><strong>電話：</strong>${phone}</p>
                         <p><strong>Email：</strong>${email || '未提供'}</p>
                         <p><strong>取貨門市：</strong>${storeCity} - ${storeName}</p>
-                        <p><strong>門市地址：</strong>${storeAddress}</p>
                         <p><strong>匯款帳號後五碼：</strong>${account}</p>
                         ${note ? `<p><strong>備註：</strong>${note}</p>` : ''}
                         <hr style="margin: 15px 0;">
