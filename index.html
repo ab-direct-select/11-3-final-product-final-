@@ -356,12 +356,12 @@
 
         <div class="category-nav">
             <button class="active" onclick="filterByCategory('all')">全部商品</button>
-            <button onclick="filterByCategory('twg-tea')">TWG 茶品</button>
-            <button onclick="filterByCategory('twg-dessert')">TWG 甜點</button>
+            <button onclick="filterByCategory('twg-tea')">TWG 經典茶品</button>
+            <button onclick="filterByCategory('twg-dessert')">TWG 特色商品</button>
             <button onclick="filterByCategory('noodles')">泡麵系列</button>
             <button onclick="filterByCategory('snacks')">零食系列</button>
-            <button onclick="filterByCategory('condiments')">調味醬料</button>
-            <button onclick="filterByCategory('coffee')">咖啡系列</button>
+            <button onclick="filterByCategory('condiments')">亞坤醬 & 松發肉骨茶包</button>
+            <button onclick="filterByCategory('coffee')">Kims Duet咖啡</button>
         </div>
 
         <div class="products-grid" id="productsGrid"></div>
@@ -387,13 +387,6 @@
                 <div class="form-group">
                     <label>Email *</label>
                     <input type="email" id="customerEmail" value="@gmail.com" required>
-                </div>
-                <div class="form-group">
-                    <label>配送方式 *</label>
-                    <div style="margin-bottom: 10px;">
-                        <input type="radio" id="delivery711" name="deliveryMethod" value="711" checked>
-                        <label for="delivery711" style="display: inline; font-weight: normal;">7-11 門市取貨</label>
-                    </div>
                 </div>
                 
                 <div class="form-group">
@@ -432,11 +425,6 @@
                 </div>
                 
                 <div class="form-group">
-                    <label>門市地址 *</label>
-                    <input type="text" id="storeAddress" placeholder="例如：台北市中正區北平西路3號" required>
-                </div>
-                
-                <div class="form-group">
                     <label>門市代碼（選填）</label>
                     <input type="text" id="storeCode" placeholder="例如：123456">
                     <small style="color: #666; font-size: 0.9em;">如果知道門市代碼可以填寫，不知道可以留空</small>
@@ -467,22 +455,22 @@
             { id: 2, name: 'TWG 獅城早餐茶包', price: 900, description: '盒裝 15入', image: 'https://drive.google.com/thumbnail?id=1frkWsCOy8QHd20-7Psjtd7Ji3kRpAvjd&sz=w1000', category: 'twg-tea' },
             { id: 3, name: 'TWG 特威經典茶包', price: 900, description: '盒裝 15入', image: 'https://drive.google.com/thumbnail?id=1yhefmyDqMeYh94kAOsMweRcGkIHXs6MV&sz=w1000', category: 'twg-tea' },
             { id: 4, name: 'TWG 經典組合', price: 900, description: '英國早餐茶、法式伯爵茶、洋甘菊茶盒裝 15入 (各5入)', image: 'https://drive.google.com/thumbnail?id=19IdsZN5fcf--8sznQX5nHgV8ZVy5LdWK&sz=w1000', category: 'twg-tea' },
-            { id: 5, name: 'TWG 茶葉五組禮品盒', price: 5000, description: '盒裝 5罐', image: 'https://images.unsplash.com/photo-1549465220-1a8b9238cd48?w=400', category: 'twg-tea' },
-            { id: 6, name: 'TWG Teasticks 糖棒', price: 180, description: '4根入', image: 'https://images.unsplash.com/photo-1499638673689-79a0b5115d87?w=400', category: 'twg-tea' },
+            { id: 5, name: 'TWG 茶葉五組禮品盒', price: 5000, description: '盒裝 5罐', image: 'https://drive.google.com/thumbnail?id=18vwo94GGu3LzIR5H9AXJGpCTVZVEbmG8&sz=w1000', category: 'twg-tea' },
+            { id: 6, name: 'TWG Teasticks 糖棒', price: 180, description: '4根入', image: 'https://drive.google.com/thumbnail?id=1-lunyL7C_3ooAaTG-n-ksshjvmTRp1sM&sz=w1000', category: 'twg-tea' },
             { id: 7, name: 'TWG 小熊茶香軟糖 - 草莓茶', price: 550, description: '罐裝(200g)', image: 'https://drive.google.com/thumbnail?id=1AL3ChRznx9Q9s72HMN0MhTaDFFL9Oc9n&sz=w1000', category: 'twg-dessert' },
             { id: 8, name: 'TWG 小熊茶香軟糖 - 覆盆子與香草茶', price: 550, description: '罐裝(200g)', image: 'https://drive.google.com/thumbnail?id=1vtkI5z162RazTMe81O8PGxP6GMbHEVn4&sz=w1000', category: 'twg-dessert' },
             { id: 9, name: 'TWG 小熊茶香軟糖 - 西柚橙茶', price: 550, description: '罐裝(200g)', image: 'https://drive.google.com/thumbnail?id=1sxuIwlnoR7IG8RDaFOh3qSaF-mMcyyoL&sz=w1000', category: 'twg-dessert' },
-            { id: 10, name: 'TWG 小熊茶香軟糖 - 芒果橙茶', price: 550, description: '罐裝(200g)', image: 'https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400', category: 'twg-dessert' },
-            { id: 11, name: 'TWG 小熊茶香軟糖 - 薑汁檸檬茶', price: 550, description: '罐裝(200g)', image: 'https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400', category: 'twg-dessert' },
-            { id: 12, name: 'TWG 小熊茶香軟糖 - 柳橙肉桂茶', price: 550, description: '罐裝(200g)', image: 'https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400', category: 'twg-dessert' },
-            { id: 13, name: 'TWG 小熊茶香軟糖 - 藍莓茶', price: 550, description: '罐裝(200g)', image: 'https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400', category: 'twg-dessert' },
+            { id: 10, name: 'TWG 小熊茶香軟糖 - 芒果橙茶', price: 550, description: '罐裝(200g)', image: 'https://drive.google.com/thumbnail?id=1OgTCFKItMzoPmHz26Qqb79cqzcFeFE_5&sz=w1000', category: 'twg-dessert' },
+            { id: 11, name: 'TWG 小熊茶香軟糖 - 薑汁檸檬茶', price: 550, description: '罐裝(200g)', image: 'https://drive.google.com/thumbnail?id=18VK7Ad0PMjQFMewq5UZyPuNJrHqYETLC&sz=w1000', category: 'twg-dessert' },
+            { id: 12, name: 'TWG 小熊茶香軟糖 - 柳橙肉桂茶', price: 550, description: '罐裝(200g)', image: 'https://drive.google.com/thumbnail?id=1bWT0aX1Zd3a8DMbzwBakdhlntHWo7mh2&sz=w1000', category: 'twg-dessert' },
+            { id: 13, name: 'TWG 小熊茶香軟糖 - 藍莓茶', price: 550, description: '罐裝(200g)', image: 'https://drive.google.com/thumbnail?id=1bWT0aX1Zd3a8DMbzwBakdhlntHWo7mh2&sz=w1000', category: 'twg-dessert' },
             { id: 14, name: 'TWG 小熊茶香軟糖 - 蘋果與葡萄茶', price: 550, description: '罐裝(200g)', image: 'https://drive.google.com/thumbnail?id=1hqzCV6hBNVmIVzidQ7p7-CS5Ld1dMYfT&sz=w1000', category: 'twg-dessert' },
             { id: 15, name: '百勝廚叻沙泡麵', price: 350, description: '4包入', image: 'https://drive.google.com/thumbnail?id=1wPMFdpAdLtA-hJu1kYT5-jA42B3dUBby&sz=w1000', category: 'noodles' },
             { id: 16, name: '百勝廚蝦湯泡麵', price: 350, description: '4包入', image: 'https://drive.google.com/thumbnail?id=1ZVJNsOE3lil-OAweebpFyOdRkliRZzxb&sz=w1000', category: 'noodles' },
             { id: 17, name: '百勝廚辣蝦麵泡麵', price: 350, description: '4包入', image: 'https://drive.google.com/thumbnail?id=1GDL6BTA1sX1A0szlpFxON4bWnTgiZaws&sz=w1000', category: 'noodles' },
             { id: 18, name: 'IRVINS 鹹蛋泡麵', price: 275, description: '5包入', image: 'https://drive.google.com/thumbnail?id=125700upQGXoG4Pnzk5Zub43wO3R1Yht-&sz=w1000', category: 'noodles' },
-            { id: 19, name: 'IRVINS 魚皮（小包）', price: 270, description: '1包', image: 'https://images.unsplash.com/photo-1599490659213-e2b9527bd087?w=400', category: 'snacks' },
-            { id: 20, name: 'IRVINS 魚皮（大包）', price: 530, description: '1包', image: 'https://drive.google.com/thumbnail?id=19_kPfhQxPzzgK6l_IDyjTJm8eVib8PG2&sz=w1000', category: 'snacks' },
+            { id: 19, name: 'IRVINS 魚皮（小包 95g)', price: 270, description: '1包', image: 'https://drive.google.com/thumbnail?id=14AlKpwF0s5piopxZBkdhTL2vhpvDclPO&sz=w1000', category: 'snacks' },
+            { id: 20, name: 'IRVINS 魚皮（大包 230g）', price: 530, description: '1包', image: 'https://drive.google.com/thumbnail?id=19_kPfhQxPzzgK6l_IDyjTJm8eVib8PG2&sz=w1000', category: 'snacks' },
             { id: 21, name: '328 加東叻沙泡麵', price: 280, description: '5包入', image: 'https://drive.google.com/thumbnail?id=1N59SmB0QxaHwUq1-UQ5403qUifktFV55&sz=w1000', category: 'noodles' },
             { id: 22, name: '珍寶泡麵', price: 280, description: '5包入', image: 'https://drive.google.com/thumbnail?id=1Z6Eq62SzJ_76Af3uUk0vhS-YKd0OKHjs&sz=w1000', category: 'noodles' },
             { id: 23, name: '亞坤醬（咖椰）', price: 280, description: '罐裝', image: 'https://drive.google.com/thumbnail?id=1r47HSEvHbqt1hq7r1-yk41nlN4KOq0Ri&sz=w1000', category: 'condiments' },
